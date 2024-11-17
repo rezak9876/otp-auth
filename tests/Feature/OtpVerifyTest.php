@@ -8,6 +8,8 @@ use RezaK\OtpAuth\Contracts\SMSSenderInterface;
 use RezaK\OtpAuth\Contracts\MobileAuthInterface;
 use Ichtrojan\Otp\Otp;
 
+pest()->extend(Tests\TestCase::class);
+
 beforeEach(function () {
     // Mock dependencies
     $this->mockMobileAuth = mock(MobileAuthInterface::class);
