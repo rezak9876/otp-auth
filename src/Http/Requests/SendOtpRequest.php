@@ -1,8 +1,8 @@
 <?php
-namespace RezaK\OtpAuth\Http\Requests;
+namespace RezaK\Notifications\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use RezaK\OtpAuth\Rules\PhoneNumber;
+use RezaK\Notifications\Rules\PhoneNumber;
 
 class SendOtpRequest extends FormRequest
 {

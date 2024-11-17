@@ -1,8 +1,8 @@
 <?php
 
-namespace RezaK\OtpAuth\Contracts;
+namespace RezaK\Notifications\Contracts;
 
 interface SMSSenderInterface
 {
-    public function sendSms(string $mobileNumber, string $message): void;
+    public function sendSms(string $mobileNumber, string $OTPCode): void;
 }

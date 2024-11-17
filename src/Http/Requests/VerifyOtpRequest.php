@@ -1,15 +1,15 @@
 <?php
-namespace RezaK\OtpAuth\Http\Requests;
+namespace RezaK\Notifications\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use RezaK\OtpAuth\Rules\PhoneNumber;
+use RezaK\Notifications\Rules\PhoneNumber;
 
 class VerifyOtpRequest extends FormRequest
 {
     public function rules(): array
     {
         return [
-            'otp' => 'required|digits:6',
+            'otp' => 'bail|required|string|digits:6',
             'mobile_number' => ['required', new PhoneNumber],
         ];
     }

@@ -1,14 +1,12 @@
 {
-    "name": "rezak/otp-auth",
+    "name": "rezak/notifications",
     "description": "A Laravel package for OTP endpoint implementation",
     "version": "1.0.0",
     "type": "library",
     "keywords": [
         "laravel",
         "otp",
-        "authentication",
-        "laravel-package",
-        "sms-otp"
+        "laravel-package"
     ],
     "license": "MIT",
     "support": {
@@ -23,21 +21,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "RezaK\\OtpAuth\\": "src/"
+            "RezaK\\Notifications\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RezaK\\OtpAuth\\Tests\\": "tests/",
+            "RezaK\\Notifications\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
         }
     },
     "require": {
-        "php": "*",
-        "ichtrojan/laravel-otp": "^2.0",
-        "illuminate/support": "*"
+        "php": "*"
     },
     "require-dev": {
         "pestphp/pest": "^3.5",
@@ -48,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RezaK\\OtpAuth\\Providers\\OtpAuthServiceProvider"
+                "RezaK\\Notifications\\Providers\\NotificationServiceProvider"
             ]
         }
     },

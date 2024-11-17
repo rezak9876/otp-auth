@@ -11,7 +11,7 @@
 |
 */
 
-pest()->extend(RezaK\OtpAuth\Tests\TestCase::class)->in('Feature');
+pest()->extend(RezaK\Notifications\Tests\TestCase::class)->in('Feature');
 
 /*
 |--------------------------------------------------------------------------

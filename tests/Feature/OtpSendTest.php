@@ -2,10 +2,10 @@
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use RezaK\OtpAuth\Http\Controllers\OtpController;
+use RezaK\Notifications\Http\Controllers\OtpController;
 use Illuminate\Testing\Fluent\AssertableJson;
-use RezaK\OtpAuth\Contracts\SMSSenderInterface;
-use RezaK\OtpAuth\Contracts\MobileAuthInterface;
+use RezaK\Notifications\Contracts\SMSSenderInterface;
+use RezaK\Notifications\Contracts\MobileAuthInterface;
 use Ichtrojan\Otp\Otp;
 
 beforeEach(function () {

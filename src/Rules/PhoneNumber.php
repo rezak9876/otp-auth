@@ -1,5 +1,5 @@
 <?php
-namespace RezaK\OtpAuth\Rules;
+namespace RezaK\Notifications\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

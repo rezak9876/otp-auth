@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaK\OtpAuth\Contracts;
+namespace RezaK\Notifications\Contracts;
 
 interface MobileAuthInterface
 {
